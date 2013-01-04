@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/radioGroup" android:background="@drawable/top_view_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.tc.sg.RouteView android:id="@id/routeView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_below="@id/radioGroup" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:background="@drawable/bottom_view_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/goButton" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/descriptionText" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/goButton" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

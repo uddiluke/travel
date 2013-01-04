@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tc.sg.ImageMapView android:id="@id/imageMap" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <AbsoluteLayout android:id="@id/popViewLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/headLayout" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/backButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="site" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/locationButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_n" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

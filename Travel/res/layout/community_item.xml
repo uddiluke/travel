@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/community_item_top" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_item_title" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/community_item_refresh" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/community_item_bottom" android:background="@drawable/tab_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/community_item_zan" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/community_item_zan" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/community_item_reply" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/community_item_reply" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/community_item_listview" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/community_list_divider2" android:layout_above="@id/community_item_bottom" android:layout_below="@id/community_item_top" />
+</RelativeLayout>

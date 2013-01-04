@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headLayout" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/newsBackButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" />
+        <ProgressBar android:id="@id/newsUpdateProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="?android:attr/progressBarStyle" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="site" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/newsUpdateButton" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/buttonLinearLayout" android:background="@drawable/catbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/cg_news_all" android:background="@drawable/newsbutton" android:padding="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="@string/cg_news_all" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/cg_news_huabao" android:padding="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cg_news_huabao" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/cg_news_discount" android:padding="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/cg_news_dazhe" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip">
+        <ListView android:id="@id/cg_news_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" />
+        <ListView android:id="@id/cg_news_listview_discount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" />
+        <View android:id="@id/blankView" android:background="@drawable/list_divider_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

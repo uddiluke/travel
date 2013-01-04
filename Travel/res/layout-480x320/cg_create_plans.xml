@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cg_plan_relativelayout" android:background="@drawable/background_login" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/head" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/backButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cg_plan" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/complete_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/download_manage_complete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <EditText android:id="@id/cg_plan_name" android:background="@drawable/shape_rounded_rectangle" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/cg_plan_name" android:layout_below="@id/head" />
+    <RelativeLayout android:id="@id/dayslayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cg_plan_name">
+        <TextView android:textSize="18.0dip" android:textColor="#ff242e3b" android:id="@id/plan_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/cg_plan_date" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/plan_day_counts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="23.0dip" android:text="@string/cg_plan_days" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/datelayout" android:background="@drawable/shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="9.0dip" android:layout_below="@id/dayslayout">
+        <RelativeLayout android:id="@id/startlayout" android:paddingLeft="2.0dip" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/dayslayout">
+            <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:id="@id/start_plans_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_item_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ff686868" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/startlayout" />
+        <RelativeLayout android:id="@id/endlayout" android:paddingLeft="2.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/startlayout">
+            <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:id="@id/end_plans_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_item_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/datelong" android:background="@drawable/shape_rounded_rectangle" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/datelayout">
+        <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:id="@id/dates_long_textview" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cg_plan_notsure" android:layout_below="@id/endlayout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_item_arrow" android:layout_below="@id/endlayout" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0dip" android:textColor="#ff242e3b" android:id="@id/pianhao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/cg_plan_pianhao" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/datelong" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/pianhao_list" android:background="@drawable/shap_plan" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/pianhao">
+        <RelativeLayout android:id="@id/jingdian" android:background="#ff202020" android:visibility="gone" android:layout_width="120.0px" android:layout_height="80.0px" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/jd" android:layout_width="100.0px" android:layout_height="60.0px" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/jingdian_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/jingdian1" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/jingdian_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:singleLine="true" android:layout_below="@id/jd" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="#ff484848" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/qinzi" android:visibility="gone" android:layout_width="120.0px" android:layout_height="80.0px" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/qz" android:layout_width="100.0px" android:layout_height="60.0px" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/qinzi_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/qinzi2" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/qinzi_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:singleLine="true" android:layout_below="@id/qz" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="#ff484848" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/qinglv" android:visibility="gone" android:layout_width="120.0px" android:layout_height="80.0px" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/ql" android:layout_width="100.0px" android:layout_height="60.0px" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/qinglv_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/qinglv2" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/qinglv_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:singleLine="true" android:layout_below="@id/ql" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="#ff484848" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/ziran" android:visibility="gone" android:layout_width="120.0px" android:layout_height="80.0px" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/zr" android:layout_width="100.0px" android:layout_height="60.0px" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/ziran_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/ziran2" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/ziran_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:singleLine="true" android:layout_below="@id/zr" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/creat_plan_button" android:background="@drawable/yellow_button" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:text="@string/cg_create_plans" android:layout_alignParentBottom="true" />
+    <Button android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/creat_plan_again_button" android:background="@drawable/red_button" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:text="@string/cg_create_plans_again" android:layout_alignParentBottom="true" />
+</RelativeLayout>

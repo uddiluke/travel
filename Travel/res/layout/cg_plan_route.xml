@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/head" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cacelButton" android:background="@drawable/text_button" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/plan_route_cancel" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plan_route_text" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/routeButton" android:background="@drawable/text_button" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/plan_route_plan" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/contentMapLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head">
+        <LinearLayout android:orientation="horizontal" android:id="@id/routeLayout" android:background="@drawable/route_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/changeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/route_change" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/startPointLayout" android:background="@drawable/route_edit_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/route_start_point" />
+                    <TextView android:textColor="#ff000000" android:id="@id/startPointText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_gps_point" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/endPointLayout" android:background="@drawable/route_edit_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/route_end_point" />
+                    <TextView android:textColor="#ff000000" android:id="@id/endPointText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_gps_point" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ExpandableListView android:id="@id/dayExpandableList" android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_background" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" android:layout_below="@id/routeLayout" />
+        <View android:background="@drawable/list_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/dayExpandableList" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_bottom_font_size">11.0dip</dimen>
+    <dimen name="tab_bottom_padding_up">5.0dip</dimen>
+    <dimen name="tab_bottom_padding_drawable">1.0dip</dimen>
+    <dimen name="crossPadingTop">50.0dip</dimen>
+    <dimen name="crossPadingRight">20.0dip</dimen>
+    <dimen name="plan_type_select_imageview">20.0dip</dimen>
+    <dimen name="plan_type_select_textview">20.0dip</dimen>
+    <dimen name="plan_type_select_tablerow">10.0dip</dimen>
+    <dimen name="community_login_margin_bottom">10.0dip</dimen>
+    <dimen name="community_poi_margin_bottom">45.0dip</dimen>
+    <dimen name="community_poi_margin_top">50.0dip</dimen>
+</resources>

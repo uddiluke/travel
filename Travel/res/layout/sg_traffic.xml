@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <RadioGroup android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/radioGroup" android:background="@drawable/tab_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/aroundRadioButton" android:tag="around" android:layout_marginTop="1.0dip" android:checked="true" android:text="@string/sg_tab_button_name_around" android:drawableTop="@drawable/tab_button_icon_map" style="@style/tabButton" />
+            <RadioButton android:id="@id/taxiRadioButton" android:tag="taxi" android:layout_marginTop="1.0dip" android:text="@string/sg_tab_button_name_taxi" android:drawableTop="@drawable/tab_button_icon_taxi" style="@style/tabButton" />
+            <RadioButton android:id="@id/infoRadioButton" android:tag="info" android:layout_marginTop="1.0dip" android:text="@string/sg_tab_button_name_info" android:drawableTop="@drawable/tab_button_icon_info" style="@style/tabButton" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

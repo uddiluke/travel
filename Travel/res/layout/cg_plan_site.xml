@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headLayout" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/finishButton" android:background="@drawable/text_button" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/plan_route_finish" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="site" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/sortButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/head_button_icon_sort" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/filterButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/head_button_icon_filter" android:layout_toLeftOf="@id/sortButton" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/searchLayout" android:background="@drawable/search_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/headLayout">
+        <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:layout_gravity="center_vertical" android:id="@id/searchEdit" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:minWidth="200.0dip" android:singleLine="true" />
+    </FrameLayout>
+    <Gallery android:id="@id/filterOrSortGallery" android:background="@drawable/type_select_background" android:layout_width="fill_parent" android:layout_height="49.0dip" android:spacing="10.0dip" android:layout_below="@id/searchLayout" />
+    <ListView android:id="@id/siteList" android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_background" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" android:layout_below="@id/filterOrSortGallery" />
+    <ExpandableListView android:id="@id/siteExpandableList" android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_background" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" android:layout_below="@id/filterOrSortGallery" />
+    <View android:background="@drawable/list_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/siteList" />
+</RelativeLayout>

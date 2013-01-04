@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/audio_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:id="@id/audioNameText" android:layout_marginLeft="10.0dip" android:text="" android:layout_alignParentLeft="true" style="@style/AudioText" />
+        <ImageView android:id="@id/infoButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/see_poi" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:id="@id/playButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/audio_play" />
+        <SeekBar android:id="@id/seekBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="100" android:layout_weight="1.0" />
+        <TextView android:id="@id/audioTimeText" style="@style/AudioText" />
+    </LinearLayout>
+</LinearLayout>

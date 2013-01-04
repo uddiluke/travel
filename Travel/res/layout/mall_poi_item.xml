@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/cg_head_layout" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/bottom" android:background="@drawable/site_item_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/favoriteButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/site_item_icon_favorite" android:layout_weight="1.0" />
+        <ImageView android:id="@id/weiboButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/site_item_icon_weibo" android:layout_weight="1.0" />
+        <ImageView android:id="@id/mapButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/site_item_icon_map" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom" android:layout_below="@id/head_layout">
+        <RelativeLayout android:id="@id/middle1" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_below="@id/head_layout">
+            <ImageView android:id="@id/iconButton" android:padding="10.0dip" android:layout_width="150.0dip" android:layout_height="120.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/middle1_middle" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/iconButton" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/nameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true" />
+                <LinearLayout android:id="@id/listview_mid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:id="@id/floorText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RatingBar android:id="@id/markRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="5.0" android:stepSize="0.5" android:isIndicator="true" style="@style/HeartRatingBarSmall" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:id="@id/commentCountText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageButton android:id="@id/commentButton" android:background="@drawable/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/middle2" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/middle1">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:id="@id/guideLayout" android:background="@color/tab_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/guideIcon" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:id="@id/guideText" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffffffff" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:id="@id/addressLayout" android:background="@color/tab_unselected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/addressIcon" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:id="@id/addressText" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/tab_selected" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@id/blank" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/middle2" />
+    </RelativeLayout>
+</RelativeLayout>

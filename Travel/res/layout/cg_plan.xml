@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/cg_plan_linearlayout" android:background="@drawable/background_login" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/head" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/creat_plan_image" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_plan" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cg_plan_text" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/edit_plan_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/edit_complete_button" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/download_manage_complete" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/no_plans_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/cg_plan_no_plans" android:src="@drawable/no_plans" android:layout_centerInParent="true" />
+        <Button android:textSize="18.0dip" android:id="@id/creat_plan_button" android:background="@drawable/yellow_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="22.0dip" android:text="@string/cg_plan_create_plans" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/head">
+        <ListView android:id="@id/plans_listview" android:background="@drawable/planview_listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/download_divider" android:dividerHeight="1.0sp" android:keepScreenOn="true" />
+        <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/plans_listview" />
+    </RelativeLayout>
+</RelativeLayout>

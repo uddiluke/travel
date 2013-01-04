@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/head" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/backButton" android:background="@drawable/text_button" android:layout_width="70.0dip" android:layout_height="46.0dip" android:text="@string/fanhui" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/modeButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/dayLayout" android:background="@drawable/day_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/head">
+        <ImageView android:id="@id/previousDayButton" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/left_s" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/nextDayButton" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/right_s" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/dayText" android:background="@drawable/field" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="sgsgsg" android:maxEms="7" android:singleLine="true" android:layout_toLeftOf="@id/nextDayButton" android:layout_toRightOf="@id/previousDayButton" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dayLayout">
+        <RelativeLayout android:id="@id/contentMapLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/footMapLayout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/locationLayout" android:paddingLeft="25.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                    <ImageView android:gravity="center_vertical" android:id="@id/locationIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/locate_n" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/locationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cg_plan_my_location" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/routeLayout" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cg_plan_route" />
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@id/bMapViewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footMapLayout">
+                <com.baidu.mapapi.MapView android:id="@id/bMapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="top" android:id="@id/shadowLayout" android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/contentListLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/footListLayout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/editLayout" android:paddingLeft="25.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                    <ImageView android:gravity="center_vertical" android:id="@id/plan_edit_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plan_edit_normal" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/plan_edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/bianji" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/checkLayout" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:gravity="center_vertical" android:id="@id/plan_check_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plan_check" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/plan_check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/check" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.tc.plan.DragListView android:id="@id/dayViewDragListView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_above="@id/footListLayout" android:layout_below="@id/dayLayout" />
+            <TextView android:gravity="center" android:id="@id/tip" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footListLayout" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/head" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/backButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/headTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/weiboButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/head">
+        <RelativeLayout android:id="@id/item_activity_mid1" android:layout_width="fill_parent" android:layout_height="130.0dip">
+            <ImageView android:id="@id/previewButton" android:padding="10.0dip" android:layout_width="150.0dip" android:layout_height="120.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/item_activity_mid1_mid" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/previewButton" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RatingBar android:id="@id/markRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="5.0" android:stepSize="0.5" android:isIndicator="true" style="@style/HeartRatingBarSmall" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:id="@id/commentCountText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:id="@id/markButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/mark" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/item_activity_mid2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/item_activity_mid1">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:gravity="center" android:id="@id/introduceButton" android:background="@color/tab_selected" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/JieShao" android:layout_weight="1.0" />
+                <View android:background="#ffffffff" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:gravity="center" android:id="@id/storyButton" android:background="@color/tab_unselected" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/YuYinGuShi" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="@color/tab_selected" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/webLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/visitedBar" android:background="@drawable/visited_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:id="@id/visitedImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/poi_not_visited" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <WebView android:id="@id/introduceWeb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/visitedBar" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/audioLayout" android:background="@color/tab_selected" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.tc.sg.AudioController android:id="@id/audioController" android:background="@color/tab_selected" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <ListView android:id="@id/audio_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@id/blank1" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/item_activity_mid2" />
+    </RelativeLayout>
+</RelativeLayout>

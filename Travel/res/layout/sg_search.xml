@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/cg_head_layout" />
+    <FrameLayout android:id="@id/layout2" android:background="@drawable/search_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout1">
+        <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:layout_gravity="center_vertical" android:id="@id/keywordEdit" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:minWidth="200.0dip" android:singleLine="true" />
+    </FrameLayout>
+    <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_background" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" android:layout_below="@id/layout2" />
+    <View android:background="@drawable/list_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/listview" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/planview_left_btn" android:background="@drawable/text_button" android:layout_width="70.0dip" android:layout_height="46.0dip" android:text="@string/fanhui" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/planview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/planview_right_btn" android:background="@drawable/text_button" android:layout_width="70.0dip" android:layout_height="46.0dip" android:text="@string/bianji" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_login" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tc.plan.DragListView android:id="@id/planview_list" android:background="@drawable/planview_listview_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/download_divider" />
+        <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

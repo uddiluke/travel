@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_selected">#ffc6c6c6</color>
+    <color name="item_unselected">#ffffffff</color>
+    <color name="tab_selected">#ffe9e9e9</color>
+    <color name="tab_unselected">#ffc5e5ff</color>
+    <color name="transparent">#99000000</color>
+    <color name="all_transparent">#00000000</color>
+    <color name="sub_radio">#ff707070</color>
+    <color name="view_background">#ffc6c6c6</color>
+    <color name="white">#ffffffff</color>
+    <color name="plan_background">#ff202020</color>
+    <color name="plan_type_background">#ff303030</color>
+    <color name="plan_select_text">#ffffffff</color>
+    <color name="plan_warning">#ffff8000</color>
+    <color name="plan_error">#ffff0000</color>
+    <color name="plan_route_map_text">#ff6e7173</color>
+    <color name="community_tab_text_selected">#ffffffff</color>
+    <color name="community_tab_text_unselected">#ff2c79d5</color>
+    <color name="community_normal_wordcount">#ff838383</color>
+    <color name="community_beyond_wordcount">#ffff0000</color>
+</resources>

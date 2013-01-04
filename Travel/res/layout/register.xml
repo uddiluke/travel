@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/communitySquareTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Register" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo" />
+            <TextView android:textAppearance="@android:style/TextAppearance.Large" android:textStyle="bold" android:textColor="#ffc0c0c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome2TC" android:shadowColor="#ff000000" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <EditText android:textAppearance="@android:style/TextAppearance.Medium.Inverse" android:id="@id/nickName" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/nickName" android:singleLine="true" />
+                <View android:background="#ff828282" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <EditText android:textAppearance="@android:style/TextAppearance.Medium.Inverse" android:id="@id/login_email" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/email" android:singleLine="true" />
+                <View android:background="#ff828282" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <EditText android:textAppearance="@android:style/TextAppearance.Medium.Inverse" android:id="@id/login_psw" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/psw" android:password="true" android:singleLine="true" />
+                <View android:background="#ff828282" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <EditText android:textAppearance="@android:style/TextAppearance.Medium.Inverse" android:id="@id/makesure_psw" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/makesure_psw" android:password="true" android:singleLine="true" />
+            </LinearLayout>
+            <Button android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="#ffffffff" android:id="@id/confirm" android:background="@drawable/login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/confirm" android:shadowColor="#ff000000" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                <TextView android:textSize="10.0dip" android:textColor="#ff8d8c8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirmInfo" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff8d8c8d" android:id="@id/YinSiZhengCe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/YinSiZhengCe" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff8d8c8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff8d8c8d" android:id="@id/ShiYongTiaoKuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/ShiYongTiaoKuan" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

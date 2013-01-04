@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_alert_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/weibo_button" android:background="@drawable/btn_style_alert_dialog_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/news_weibo_share" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/email_button" android:background="@drawable/btn_style_alert_dialog_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/news_email_share" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/cancle_button" android:background="@drawable/btn_style_alert_dialog_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/news_cancle_share" />
+</LinearLayout>

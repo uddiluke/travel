@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headLayout" android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/updateButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/update" android:layout_alignParentRight="true" />
+        <ProgressBar android:id="@id/updateProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="?android:attr/progressBarStyle" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="site" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/skipButton" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/head_button_icon_skip" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/crossButton" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_gallery" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <TableLayout android:id="@id/galleryLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2" android:shrinkColumns="0,1,2" android:layout_alignParentBottom="true">
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/itemLayout" android:layout_width="100.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/grid_button_icon_site" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/itemLayout" android:layout_width="100.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/grid_button_icon_site" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/itemLayout" android:layout_width="100.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/grid_button_icon_site" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/itemLayout" android:layout_width="100.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/grid_button_icon_site" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/itemLayout" android:layout_width="100.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/grid_button_icon_site" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/itemLayout" android:layout_width="100.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/grid_button_icon_site" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout android:orientation="vertical" android:background="#77000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/headLayout">
+        <ViewFlipper android:id="@id/viewFlipper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0dip" android:textColor="?android:textColorPrimary" android:id="@id/contentText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/cg_gallery" android:layout_marginRight="10.0dip" android:maxLines="3" android:layout_below="@id/viewFlipper" android:lineSpacingMultiplier="1.4" />
+    </RelativeLayout>
+</RelativeLayout>

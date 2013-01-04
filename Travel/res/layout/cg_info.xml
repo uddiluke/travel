@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/cg_head_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/home_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/infoList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_background" android:cacheColorHint="#00000000" android:divider="@drawable/list_divider_line" android:dividerHeight="1.0sp" />
+        <View android:background="@drawable/list_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

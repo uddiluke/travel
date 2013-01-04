@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/sinaAccount" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/weibo_yonghuming" android:ems="100" android:singleLine="true" />
+    <EditText android:id="@id/sinaPsw" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/weibo_mima" android:ems="100" android:password="true" android:singleLine="true" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/sina_bind_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/sina_bind_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_comfirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

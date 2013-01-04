@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="site_sort_type_array">
+        <item>名称</item>
+        <item>最受欢迎</item>
+        <item>距离</item>
+        <item>区域</item>
+        <item>价格由低到高</item>
+        <item>价格由高到低</item>
+    </string-array>
+    <string-array name="favorite_sort_type_array">
+        <item>名称</item>
+        <item>由新到旧</item>
+        <item>由旧到新</item>
+        <item>距离</item>
+        <item>区域</item>
+    </string-array>
+    <string-array name="mall_sort_type_array">
+        <item>名称</item>
+        <item>由新到旧</item>
+        <item>由旧到新</item>
+    </string-array>
+    <string-array name="manage_download_done_array">
+        <item>删除全部景点</item>
+        <item>删除某个景点</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="manage_download_ing_array">
+        <item>取消全部下载</item>
+        <item>取消某项下载</item>
+        <item>暂停全部下载</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="interest_array">
+        <item>经典游:经典路线,jingdian</item>
+        <item>亲子游:亲子,qinzi</item>
+        <item>情侣游:情侣,qinglv</item>
+        <item>风景游:自然,ziran</item>
+        <item>购物游:购物,gouwu</item>
+        <item>博彩游:博彩,duchang</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1天</item>
+        <item>1.5天</item>
+        <item>2天</item>
+        <item>2.5天</item>
+        <item>3天</item>
+        <item>3.5天</item>
+        <item>4天</item>
+        <item>4.5天</item>
+        <item>5天</item>
+        <item>5.5天</item>
+        <item>6天</item>
+        <item>6.5天</item>
+        <item>7天</item>
+        <item>7.5天</item>
+        <item>8天</item>
+        <item>8.5天</item>
+        <item>9天</item>
+        <item>9.5天</item>
+        <item>10天</item>
+        <item>10.5天</item>
+        <item>11天</item>
+        <item>11.5天</item>
+        <item>12天</item>
+    </string-array>
+    <string-array name="plan_view_activity_dialog_arrays">
+        <item>添加/删除/修改计划</item>
+        <item>修改计划名称/时间</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="chinese_nums">
+        <item>零</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+    </string-array>
+    <string-array name="plan_section">
+        <item>上午</item>
+        <item>午餐</item>
+        <item>下午</item>
+        <item>晚餐</item>
+        <item>晚上</item>
+    </string-array>
+</resources>

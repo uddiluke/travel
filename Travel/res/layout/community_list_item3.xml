@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/community_list_item3_divier" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/community_list_divider" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+    <TextView android:textColor="#ff000000" android:id="@id/community_list_item3_username" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff999aa8" android:id="@id/community_list_item3_date" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textColor="#ff727171" android:id="@id/community_list_item3_community" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/community_list_item3_username" android:layout_alignParentLeft="true" />
+</RelativeLayout>

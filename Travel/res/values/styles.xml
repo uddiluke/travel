@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tabButton">
+        <item name="android:textSize">@dimen/tab_bottom_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_button_background</item>
+        <item name="android:paddingTop">@dimen/tab_bottom_padding_up</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/tab_bottom_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MenuItem">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AudioText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">00:00</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="downloadTextStyleWhite">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="downloadTextStyleBlakeNormal">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="downloadTextStyleBlake">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="downloadTextStyleBlakeWithShadow">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="downloadTextStyleGrey">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff4c4c4e</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="downloadTextStyleGreyWithShadow">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff4c4c4e</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="update_progressbar">
+        <item name="android:maxHeight">12.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">12.0dip</item>
+    </style>
+    <style name="news_dalog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="HeartRatingBarBig" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">35.0dip</item>
+        <item name="android:progressDrawable">@drawable/heart_big</item>
+        <item name="android:minHeight">35.0dip</item>
+    </style>
+    <style name="HeartRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">12.0dip</item>
+        <item name="android:progressDrawable">@drawable/heart_small</item>
+        <item name="android:minHeight">12.0dip</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="priceRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">11.0dip</item>
+        <item name="android:progressDrawable">@drawable/price_ratingbar</item>
+        <item name="android:minHeight">11.0dip</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+</resources>

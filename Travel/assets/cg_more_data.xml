@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<city>
+  <item icon="setting" name="设置" type="setting"/>
+  <item icon="jingcaituijian" name="精彩推荐" type="jingcaituijian"/>
+  <item icon="fankui" name="问题反馈" type="fankui"/>
+  <item icon="tuijian" name="推荐给朋友" type="tuijian"/>
+  <item icon="about" name="关于" type="about" url="about/about.html"/>
+  <item icon="update" name="检查更新" type="update"/>
+</city>

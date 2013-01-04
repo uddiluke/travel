@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tc_start_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="@dimen/tc_start_padding" android:layout_gravity="center" android:id="@id/tv1" android:text="@string/cg_welcome" style="@style/downloadTextStyleWhite" />
+        <TextView android:layout_gravity="center" android:id="@id/tv2" android:layout_marginTop="@dimen/tc_start_paddingtop" style="@style/downloadTextStyleWhite" />
+        <TextView android:layout_gravity="center" android:id="@id/cg_update_time" android:layout_marginTop="20.0dip" style="@style/downloadTextStyleWhite" />
+        <LinearLayout android:gravity="center" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tc_start_paddingtop"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <Button android:id="@id/update_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/cg_download" android:layout_weight="1.0" />
+            <Button android:id="@id/update_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/cg_update_cancle" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

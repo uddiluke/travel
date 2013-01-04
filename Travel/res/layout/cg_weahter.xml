@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/cg_head_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_tmp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/head_layout" android:layout_centerVertical="true">
+        <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snow" android:layout_alignParentLeft="true" />
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="right" android:layout_gravity="right|center" android:id="@id/current_tempC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="-12°/-29°" android:singleLine="true" android:layout_toRightOf="@id/photo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dateinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="date" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="week" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="多云" />
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/update_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tem_wind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/temperature" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="温度" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/wind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="风向" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/humidity_fangsai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/humidity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="湿度" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/sunproof" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="防晒指数:不需要" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/btn_group_pressed_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="@dimen/cg_weather_clothingtop" android:layout_marginRight="18.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/clothes" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/chuanyitext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="穿衣建议: " />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/chuanyi" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="7.0" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/btn_group_pressed_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="18.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/attractionpng" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/huodongtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动建议: " />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/huodong" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="7.0" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/weather_list" android:layout_width="fill_parent" android:layout_height="79.0dip" android:layout_marginTop="2.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/today_weather" android:background="@drawable/weather_button1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/today_weekday" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="今天" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/today_temperture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="今天的温度" />
+            <ImageView android:id="@id/today_weahtericon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chance_of_rain" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextone_weather" android:background="@drawable/weather_button2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nextone_weekday" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="下一天" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nextone_temperture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下一天的温度" />
+            <ImageView android:id="@id/nextone_weahtericon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:textSize="12.0sp" android:gravity="center" android:orientation="vertical" android:id="@id/nexttwo_weather" android:background="@drawable/weather_button3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nexttwo_weekday" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="下两天" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nexttwo_temperture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下两天的温度" />
+            <ImageView android:id="@id/nexttwo_weahtericon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextthird_weather" android:background="@drawable/weather_button4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nextthird_weekday" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="下三天" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nextthird_temperture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下三天的温度" />
+            <ImageView android:id="@id/nextthird_weahtericon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+         <LinearLayout
+             android:id="@id/nextfouth_weather"
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+             android:layout_marginLeft="0.0dip"
+             android:layout_weight="1.0"
+             android:background="@drawable/weather_button4"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/nextfouth_weekday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:gravity="center"
+                android:text="下四天"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/nextfouth_temperture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="下四天的温度"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+
+            <ImageView
+                android:id="@id/nextfouth_weahtericon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

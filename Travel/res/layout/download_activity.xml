@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/head_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Large" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_download" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/download_manage" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/download_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@id/download_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:gravity="center" android:id="@id/download_done" android:background="@drawable/download_left_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/YiWanCheng" />
+            <RadioButton android:gravity="center" android:id="@id/download_lib" android:background="@drawable/download_middle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/DaoLanZhongXin" />
+            <RadioButton android:gravity="center" android:id="@id/download_ing" android:background="@drawable/download_middle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/ZhengZaiXiaZai" />
+            <RadioButton android:gravity="center" android:id="@id/download_update" android:background="@drawable/download_right_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/GengXin" />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout android:background="@drawable/background_login" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/download_grid_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/download_grid_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cg_nodownload_bg" android:layout_centerInParent="true" />
+            <GridView android:id="@id/download_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:horizontalSpacing="20.0dip" android:verticalSpacing="5.0dip" android:numColumns="4" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/download_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/download_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/download_divider" />
+            <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/lib_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

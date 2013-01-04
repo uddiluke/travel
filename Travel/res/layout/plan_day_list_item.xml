@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/plan_day_item_divide" android:background="@drawable/plan_day_item_divide_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffffffff" android:id="@id/plan_day_item_divide_section" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:shadowColor="#ff000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/plan_day_item_divide_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/plan_day_item_divide_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/plan_day_item_normal" android:background="@drawable/guide_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/plan_day_item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/remove" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/plan_day_item_icon" android:padding="10.0dip" android:layout_width="120.0dip" android:layout_height="90.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/plan_day_item_delete" android:layout_alignWithParentIfMissing="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:id="@id/plan_day_item_distanceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/draglistview_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/grabber" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/plan_day_item_hasguide" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_icon_guide" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/plan_day_item_content_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:ems="10" android:singleLine="true" android:layout_toLeftOf="@id/plan_day_item_distanceText" android:layout_toRightOf="@id/plan_day_item_icon" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/draglistview_indicator" android:layout_toRightOf="@id/plan_day_item_icon" android:layout_centerVertical="true">
+            <RatingBar android:layout_gravity="center_vertical" android:id="@id/plan_day_item_content_priceRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:numStars="3" android:rating="3.0" android:stepSize="0.5" style="@style/priceRatingBar" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:layout_gravity="center_vertical" android:id="@id/plan_day_item_content_typeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <FrameLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/plan_day_item_icon" android:layout_alignParentBottom="true">
+            <RatingBar android:id="@id/plan_day_item_content_markRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="5.0" android:stepSize="0.5" style="@style/HeartRatingBarSmall" />
+            <TextView android:id="@id/plan_day_item_content_problem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

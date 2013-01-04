@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_bottom_font_size">11.0dip</dimen>
+    <dimen name="tab_bottom_padding_up">5.0dip</dimen>
+    <dimen name="tab_bottom_padding_drawable">1.0dip</dimen>
+    <dimen name="crossPadingTop">50.0dip</dimen>
+    <dimen name="crossPadingRight">20.0dip</dimen>
+    <dimen name="plan_type_select_imageview">20.0dip</dimen>
+    <dimen name="plan_type_select_textview">20.0dip</dimen>
+    <dimen name="plan_type_select_tablerow">10.0dip</dimen>
+    <dimen name="tc_start_padding">35.0dip</dimen>
+    <dimen name="tc_start_paddingtop">20.0dip</dimen>
+    <dimen name="cg_gallery">5.0dip</dimen>
+    <dimen name="cg_news_image_width">150.0px</dimen>
+    <dimen name="cg_news_image_height">110.0px</dimen>
+    <dimen name="cg_news_text">24.0px</dimen>
+    <dimen name="cg_weather_clothingtop">8.0dip</dimen>
+    <dimen name="cg_plan_no_plans">40.0dip</dimen>
+    <dimen name="cg_more_image_width">160.0px</dimen>
+    <dimen name="cg_more_image_height">120.0px</dimen>
+    <dimen name="community_login_regist">50.0dip</dimen>
+</resources>

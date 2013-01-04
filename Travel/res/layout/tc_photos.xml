@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/cg_head_layout" />
+    <Gallery android:gravity="center_vertical" android:id="@id/gallery" android:background="#55000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="16.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageSwitcher android:gravity="center_vertical" android:id="@id/switcher" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="16.0dip" android:layout_above="@id/gallery" android:layout_below="@id/head_layout" android:layout_alignParentLeft="true" />
+</RelativeLayout>

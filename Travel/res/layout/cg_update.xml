@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:gravity="top" android:id="@id/ViewFlipper01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/brand8" />
+        <ImageView android:id="@id/dd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/brand7" />
+        <ImageView android:id="@id/ddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/brand7" />
+        <ImageView android:id="@id/dddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/brand7" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/CGDownloadStatus" android:paddingLeft="10.0dip" android:layout_alignParentLeft="true" style="@style/downloadTextStyleWhite" />
+            <TextView android:id="@id/CGDownloadProgress" android:paddingRight="10.0dip" android:layout_alignParentRight="true" style="@style/downloadTextStyleWhite" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/pb" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="0.0" style="@style/update_progressbar" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/ZanTing" android:layout_weight="1.0" />
+            <Button android:id="@id/cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/cg_update_cancle" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

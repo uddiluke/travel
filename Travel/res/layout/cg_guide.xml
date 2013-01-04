@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/cg_head_layout" />
+    <TableLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3" android:shrinkColumns="0,1,2,3" android:layout_below="@id/head_layout">
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RelativeLayout android:id="@id/newsTab" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/newsImageButton" android:background="@drawable/grid_button_icon_news" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_newsandhuabao" android:layout_below="@id/newsImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/downloadTab" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/downloadImageButton" android:background="@drawable/grid_button_icon_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_download" android:layout_below="@id/downloadImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/siteImageButton" android:background="@drawable/grid_button_icon_site" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_site" android:layout_below="@id/siteImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/hotelImageButton" android:background="@drawable/grid_button_icon_hotel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_hotel" android:layout_below="@id/hotelImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/restaurantImageButton" android:background="@drawable/grid_button_icon_restaurant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_restaurant" android:layout_below="@id/restaurantImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/shoppingImageButton" android:background="@drawable/grid_button_icon_shopping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_shopping" android:layout_below="@id/shoppingImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/funImageButton" android:background="@drawable/grid_button_icon_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_fun" android:layout_below="@id/funImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/trafficImageButton" android:background="@drawable/grid_button_icon_traffic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_traffic" android:layout_below="@id/trafficImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/introduceImageButton" android:background="@drawable/grid_button_icon_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_introduce" android:layout_below="@id/introduceImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rateTab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/rateImageButton" android:background="@drawable/grid_button_icon_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_rate" android:layout_below="@id/rateImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/weatherImageButton" android:background="@drawable/grid_button_icon_weather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_weather" android:layout_below="@id/weatherImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/favoriteImageButton" android:background="@drawable/grid_button_icon_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grid_button_name_favorite" android:layout_below="@id/favoriteImageButton" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

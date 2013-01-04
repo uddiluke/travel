@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/guide_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/previewIcon" android:padding="10.0dip" android:layout_width="120.0dip" android:layout_height="90.0dip" android:scaleType="fitXY" />
+    <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <RatingBar android:layout_gravity="center_vertical" android:id="@id/priceRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:numStars="3" android:rating="3.0" android:stepSize="0.5" style="@style/priceRatingBar" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:layout_gravity="center_vertical" android:id="@id/typeText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RatingBar android:id="@id/markRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="5.0" android:stepSize="0.5" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/HeartRatingBarSmall" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff999aa8" android:id="@id/distanceText" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/distanceText" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/guideIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_icon_guide" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/favoriteIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_icon_favorite" android:layout_toRightOf="@id/guideIcon" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

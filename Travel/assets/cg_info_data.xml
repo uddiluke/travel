@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<city id="13" name="华山" cname="MountainHua"  community_code="CG_SZ" flurry="IFZN3263KRLHC8X1HEM2" 
+lat="31.309062" lon="120.615978" level="14" time="123123123123" version="1.0" weather="拙政园、留园、虎丘等split苏州博物馆等" plan="经典游split亲子游split情侣游split风景游" wgs84_used="false">
+<!-- 此处的version 代表程序的中用到的协议版本和更新协议有关，注意不是产品的版本号 -->
+  <item id="1" type="sg" name="Site" ch_name="景点" url="list"/>
+  <item id="2" type="sg" name="Hotel" ch_name="住宿" url="list"/>
+  <item id="3" type="sg" name="Restaurant" ch_name="餐饮" url="list"/>
+  <item id="4" type="sg" name="Shopping" ch_name="购物" url="list"/>
+  <item id="5" type="sg" name="Fun" ch_name="娱乐" url="list"/>
+  <item id="6" type="favorite" name="Favorite" ch_name="我的最爱" url="list"/>
+  <item id="7" type="cg" name="intro" ch_name="城市概览" url="list"/>
+  <item id="8" type="cg" name="gallery" ch_name="城市画报" url="list"/>
+  <item id="9" type="cg" name="traffics" ch_name="交通" url="list"/>
+  <item id="10" type="more" name="more" ch_name="更多" url="list"/>
+  <item id="14" type="news" name="news" ch_name="资讯和画报" url="list"/> 
+</city>

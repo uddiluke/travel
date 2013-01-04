@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/planview_item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/remove" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/planview_item_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/planview_item_delete" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:background="#ff6c6c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <LinearLayout android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                <ImageView android:id="@id/planview_item_album_0" android:layout_width="72.0dip" android:layout_height="54.0dip" android:layout_margin="2.0dip" android:src="@drawable/nopic" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="#ff6c6c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <LinearLayout android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                <ImageView android:id="@id/planview_item_album_1" android:layout_width="72.0dip" android:layout_height="54.0dip" android:layout_margin="2.0dip" android:src="@drawable/nopic" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="#ff6c6c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <LinearLayout android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                <ImageView android:id="@id/planview_item_album_2" android:layout_width="72.0dip" android:layout_height="54.0dip" android:layout_margin="2.0dip" android:src="@drawable/nopic" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/draglistview_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_item_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/planview_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/draglistview_indicator" android:layout_toRightOf="@id/planview_item_album" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0dip" android:textColor="#ff202020" android:id="@id/planview_item_content_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="2.0" android:shadowRadius="2.0" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff686868" android:id="@id/planview_item_content_names" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <TextView android:textSize="14.0dip" android:id="@id/planview_item_content_problem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>
